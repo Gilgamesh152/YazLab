@@ -23,7 +23,7 @@ Bu projede kullanılan ana teknolojiler şunlardır:
 
 Projeye ilk girdiğinizde kullanıcı dostu bir giriş ekranı karşılar. Aşağıda giriş ekranının bir örneği yer almaktadır:
 
-![Giriş Ekranı](https://raw.githubusercontent.com/kullaniciAdi/projeAdi/main/src/assets/images/image.png)
+![Giriş Ekranı](src/assets/images/image.png)
 
 Başvuru formu, akademik personel adaylarının başvurularını girmesine olanak tanır.
 
