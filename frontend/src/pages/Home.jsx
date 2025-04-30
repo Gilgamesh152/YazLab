@@ -1,6 +1,6 @@
 import React from 'react';
 
-import CustomLink from '@/components/CustomLink';
+import CustomLink from '../components/CustomLink';
 
 export default function Home() {
   return (
@@ -27,6 +27,11 @@ export default function Home() {
                 Theodorus Clarence
               </CustomLink>
             </footer>
+          </div>
+          <div className='flex flex-col items-center justify-center min-h-screen text-white layout'>
+            <CustomLink href='/login'>
+              <h1>Giriş</h1>
+            </CustomLink>
           </div>
         </section>
       </main>
