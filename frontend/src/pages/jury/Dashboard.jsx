@@ -26,7 +26,7 @@ export default function JuryDashboard() {
   ];
 
   const handleIncele = (id) => {
-    navigate(`/juri/degerlendirme?id=${id}`);
+    navigate(`/akademisyen/degerlendirme?id=${id}`);
   };
 
   return (
