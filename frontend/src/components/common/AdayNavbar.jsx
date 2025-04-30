@@ -24,6 +24,7 @@ export default function AdayNavbar() {
     <nav className="relative bg-indigo-700 text-white px-6 py-3 flex justify-between items-center shadow">
       <div className="font-bold text-lg">Aday Paneli</div>
       <div className="flex items-center space-x-3">
+        <NavLink to="/aday/dashboard" className={({ isActive }) => (isActive ? activeClass : linkClass)}>Ana Sayfa</NavLink>
         <NavLink to="/aday/ilanlar" className={({ isActive }) => (isActive ? activeClass : linkClass)}>İlanlar</NavLink>
         <NavLink to="/aday/basvurularim" className={({ isActive }) => (isActive ? activeClass : linkClass)}>Başvurularım</NavLink>
         <NavLink to="/aday/belge-yukle" className={({ isActive }) => (isActive ? activeClass : linkClass)}>Belge Yükleme</NavLink>

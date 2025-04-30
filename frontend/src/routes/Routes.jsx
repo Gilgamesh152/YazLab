@@ -13,6 +13,10 @@ import MyApplications from '@/pages/applicant/MyApplications';
 import DocumentUpload from '@/pages/applicant/DocumentUpload';
 import ApplicationStatus from '@/pages/applicant/ApplicationStatus';
 
+// 🎓 Jüri Paneli Sayfaları
+import JuryDashboard from '@/pages/jury/Dashboard';
+import ApplicationEvaluation from '@/pages/jury/ApplicationEvaluation';
+import JuriLayout from '@/components/common/JuriLayout';
 
 export default function AppRoutes() {
   return (
@@ -23,13 +27,6 @@ export default function AppRoutes() {
         <Route path="/" element={<Login />} />
 
         {/* Aday Paneli */}
-        {/* <Route path="/aday/dashboard" element={<AdayDashboard />} />
-        <Route path="/aday/ilanlar" element={<Announcements />} />
-        <Route path="/aday/basvuru" element={<ApplicationForm />} />
-        <Route path="/aday/basvurularim" element={<MyApplications />} />
-        <Route path="/aday/belge-yukle" element={<DocumentUpload />} />
-        <Route path="/aday/durum" element={<ApplicationStatus />} /> */}
-
         <Route path="/aday" element={<AdayLayout />}>
           <Route path="dashboard" element={<AdayDashboard />} />
           <Route path="ilanlar" element={<Announcements />} />
@@ -38,6 +35,13 @@ export default function AppRoutes() {
           <Route path="belge-yukle" element={<DocumentUpload />} />
           <Route path="durum" element={<ApplicationStatus />} />
         </Route>
+
+        {/* Jüri Paneli */}
+        <Route path="/akademisyen" element={<JuriLayout />}>
+          <Route path="dashboard" element={<JuryDashboard />} />
+          <Route path="degerlendirme" element={<ApplicationEvaluation />} />
+        </Route>
+
       </Routes>
     </Router>
   );
