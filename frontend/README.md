@@ -1,113 +1,46 @@
-# Vite React Tailwind Starter
-![Screenshots](https://i.imgur.com/vlZMdj3.png)
+# Akademik Personel Başvuru Sistemi (Frontend)
 
+**Akademik Personel Başvuru Sistemi** (APBS), üniversiteye başvuran akademik personel adaylarının başvuru süreçlerini kolaylaştıran ve takip edilebilmesini sağlayan bir web uygulamasıdır. Bu sistem, kullanıcı dostu bir arayüz ile başvuru yapma, başvuru durumunu izleme gibi işlemleri kolayca gerçekleştirmenize olanak tanır.
 
-This is a [Vite](https://vitejs.dev/), [React](https://reactjs.org/) and [Tailwind CSS](https://tailwindcss.com/) project bootstrapped using vite-react-tailwind-starter created by [Theodorus Clarence](https://github.com/theodorusclarence/vite-react-tailwind-starter).
-- 💡 Instant Server Start
-- ⚡️ Lightning Fast HMR
-- 🛠️ Rich Features
-- 📦 Optimized Build
-- 🔩 Universal Plugin Interface
-- 🔑 Fully Typed APIs
+Frontend kısmı **React.js**, **Vite** ve **Tailwind CSS** teknolojileriyle geliştirilmiştir.
 
-See the deployment on [https://vite-react-tailwind-starter.theodorusclarence.com/](https://vite-react-tailwind-starter.theodorusclarence.com/)
+---
 
+## Kullanılan Teknolojiler
 
-## Installation
+Bu projede kullanılan ana teknolojiler şunlardır:
 
-### Clone the template
+- **React.js**: Modern web uygulamaları geliştirmek için kullanılan popüler bir JavaScript kütüphanesidir.
+- **Vite**: Hızlı geliştirme ortamı sağlayan bir build aracıdır. React projeleri için optimize edilmiştir.
+- **Tailwind CSS**: Esnek ve özelleştirilebilir bir utility-first CSS framework'üdür. Tasarımda hızlı ve verimli çalışma imkanı sağlar.
+- **PDF.js** (isteğe bağlı): PDF dosyalarını kullanıcı arayüzünde görüntülemek için kullanılabilir.
 
-To clone this template you can use one of the three ways:
+---
 
+## Ekran Görüntüleri
 
-#### 1. Use npx degit
-```bash
-npx degit https://github.com/theodorusclarence/vite-react-tailwind-starter my-app
-```
-replace `my-app` with your application name
+### 1. **Giriş Ekranı**
 
+Projeye ilk girdiğinizde kullanıcı dostu bir giriş ekranı karşılar. Aşağıda giriş ekranının bir örneği yer almaktadır:
 
-#### 2. Use this repository as a template
+![Giriş Ekranı](image.jpg)
 
-![Use as template](https://i.imgur.com/I6aThUJ.png)
+### 2. **Başvuru Formu**
 
+Başvuru formu, akademik personel adaylarının başvurularını girmesine olanak tanır.
 
-#### 3. Deploy to vercel
+![Başvuru Formu](path_to_another_image.jpg)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Ftheodorusclarence%2Fvite-react-tailwind-starter)
+---
 
+## Başlangıç
 
-### Running The Application
-First, install all the dependencies,
-```bash
-npm i
-# or
-yarn
-```
+Projeyi yerel bilgisayarınızda çalıştırabilmek için aşağıdaki adımları izleyebilirsiniz:
 
-Then, run the development server:
+### 1. Depoyu Klonlayın
+
+Depoyu bilgisayarınıza klonlamak için aşağıdaki komutu kullanın:
 
 ```bash
-npm run dev
-# or
-yarn dev
-```
+git clone https://github.com/Gilgamesh152/YazLab.git
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-![Finished Build](https://i.imgur.com/c9P343j.png)
-
-You can start editing the page by modifying `pages/Home.jsx`. The page auto-updates as you edit the file.
-
-## What's Inside
-
-### Absolute import
-
-You can absolute import by using `@/`
-
-For example
-```jsx
-import UnstyledLink from '@/components/UnstyledLink'
-```
-You can also use auto import and it should work automatically.
-
-When you add a new folder in src, add it on the `jsconfig.json`
-```json
-{
-  "compilerOptions": {
-    "jsx": "preserve",
-    "baseUrl": "./src",
-    "paths": {
-      "@/components/*": ["./components/*"],
-      "@/pages/*": ["./pages/*"],
-      "@/routes/*": ["./routes/*"],
-      // add new folder here
-    },
-  },
-}
-```
-
-### Inter Fonts
-
-Inter fonts is self hosted. The default weights are `400, 600, 700`. To add more, use fontsquirrel.
-
-### UnstyledLink Component
-Used as a component for Next.js Link. Will render out Next/Link if the href started with `/` or `#`, else will render an `a` tag with `target='_blank'`.
-
-### CustomLink Component
-An extension of UnstyledLink Component, you can add your default styling for a button/link.
-```jsx
-<UnstyledLink
-      className={`${props.className} inline-flex items-center font-bold hover:text-primary-400`}
-      {...props}
-/>
-```
-
-### Default Favicon Declaration
-Use [Favicon Generator](https://www.favicon-generator.org/) and then overwrite the files in `/public/favicon`
-
-### Just-In-Time Tailwindcss
-Defaulted to true, you can uncomment the `mode='jit'` in `/tailwind.config.js`
-
-### Default Styles
-There are default styles for responsive heading sizes, and `.layout` to support a max-width for larger screen size.
