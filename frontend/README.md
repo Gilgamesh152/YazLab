@@ -23,13 +23,9 @@ Bu projede kullanılan ana teknolojiler şunlardır:
 
 Projeye ilk girdiğinizde kullanıcı dostu bir giriş ekranı karşılar. Aşağıda giriş ekranının bir örneği yer almaktadır:
 
-![Giriş Ekranı](image.jpg)
-
-### 2. **Başvuru Formu**
+![Giriş Ekranı](frontend/src/assests/images/image.png )
 
 Başvuru formu, akademik personel adaylarının başvurularını girmesine olanak tanır.
-
-![Başvuru Formu](path_to_another_image.jpg)
 
 ---
 
