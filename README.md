@@ -37,7 +37,7 @@ Projeyi yerel bilgisayarınızda çalıştırabilmek için aşağıdaki adımlar
 
 Depoyu bilgisayarınıza klonlamak için aşağıdaki komutu kullanın:
 
-```bash
+''bash
 git clone https://github.com/Gilgamesh152/YazLab.git
 
 # Akademik Personel Başvuru Sistemi - Backend
